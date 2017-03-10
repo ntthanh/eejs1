@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ALICE Decrypt Key</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./styles/app.css"/>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Encrypted KEY</label>
+        <textarea name="encrypted_key" cols="150" rows="5"></textarea>
+      </div>
+      <div>
+        <label>ALICE PRIVATE KEY to DECRYPT</label>
+        <textarea name="private_key" id="private_key" cols="150" rows="10"></textarea>
+      </div>
+      <div>
+        <label>KEY</label>
+        <textarea name="csr" cols="150" rows="5"></textarea>
+      </div>
+      <input type="submit" value="Run"/>
+    </form>
+    <script src="./src/jquery-3.1.0.min.js"></script>
+    <script src="./src/promise-7.0.4.min.js"></script>
+    <script src="./src/webcrypto-shim.js"></script>
+    <script src="./src/key_decrypt.js"></script>
+  </body>
+</html>

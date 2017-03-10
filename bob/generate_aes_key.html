@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BOB Generate AES Key</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./styles/app.css"/>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>KEY</label>
+        <textarea name="csr" cols="150" rows="1"></textarea>
+      </div>
+      <input type="submit" value="Run"/>
+    </form>
+    <script src="./src/jquery-3.1.0.min.js"></script>
+    <script src="./src/promise-7.0.4.min.js"></script>
+    <script src="./src/webcrypto-shim.js"></script>
+    <script src="./src/generate_aes_key.js"></script>
+  </body>
+</html>

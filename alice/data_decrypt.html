@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ALICE Decrypt Message</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./styles/app.css"/>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>KEY to DECRYPT DATA</label>
+        <textarea name="key" cols="150" rows="1"></textarea>
+      </div>
+      <div>
+        <label>ENCRYPTED DATA</label>
+        <textarea name="data" cols="150" rows="5"></textarea>
+      </div>
+      <div>
+        <label>DATA</label>
+        <textarea name="csr" cols="150" rows="10"></textarea>
+      </div>
+      <input type="submit" value="Run"/>
+    </form>
+
+    <script src="./src/jquery-3.1.0.min.js"></script>
+    <script src="./src/promise-7.0.4.min.js"></script>
+    <script src="./src/webcrypto-shim.js"></script>
+    <script src="./src/data_decrypt.js"></script>
+  </body>
+</html>
